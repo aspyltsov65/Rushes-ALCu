@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: apyltsov <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: apytlsov <apytlsov@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/07 17:31:40 by apyltsov          #+#    #+#              #
-#    Updated: 2018/09/08 13:53:40 by apyltsov         ###   ########.fr        #
+#    Updated: 2019/01/12 18:03:55 by apytlsov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ LIBFTDIR := ./libft/
 
 LIBFT = $(LIBFTDIR)/libft.a
 
-SRCFILE = get_next_line.c main.c
+SRCFILE = get_next_line.c main.c game.c bot.c
  
 OBJECTS = $(addprefix $(OBJ_DIR), $(SRCFILE:.c=.o))
 
