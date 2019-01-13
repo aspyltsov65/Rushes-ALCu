@@ -6,13 +6,13 @@
 /*   By: apytlsov <apytlsov@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/11 21:38:32 by apyltsov          #+#    #+#             */
-/*   Updated: 2019/01/13 21:32:04 by apytlsov         ###   ########.fr       */
+/*   Updated: 2019/01/13 22:44:01 by apytlsov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <alcu.h>
 
-static int  validation_line(char *line)
+static int	validation_line(char *line)
 {
 	int i;
 
@@ -31,7 +31,7 @@ static int  validation_line(char *line)
 	return (1);
 }
 
-static void  read_board(int fd, t_game *al)
+static void	read_board(int fd, t_game *al)
 {
 	char	*line;
 	t_list	*board;
@@ -48,7 +48,7 @@ static void  read_board(int fd, t_game *al)
 		al->size++;
 	}
 	i = -1;
-	if(!(al->board = (int*)malloc(sizeof(int) * al->size)))
+	if (!(al->board = (int*)malloc(sizeof(int) * al->size)))
 		exit(1);
 	while (board && ++i < al->size)
 	{
@@ -61,11 +61,11 @@ static void  read_board(int fd, t_game *al)
 void		put_error(int error)
 {
 	ft_putstr("\x1b[31mERROR: \x1b[0m");
-	if(error == 4)
+	if (error == 4)
 		ft_putendl("too many arguments");
-	if(error == 5)
+	if (error == 5)
 		ft_putendl("open error");
-	if(error == 6)
+	if (error == 6)
 		ft_putendl("invalid input");
 	exit(1);
 }
