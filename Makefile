@@ -6,11 +6,11 @@
 #    By: apytlsov <apytlsov@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/07 17:31:40 by apyltsov          #+#    #+#              #
-#    Updated: 2019/01/12 18:03:55 by apytlsov         ###   ########.fr        #
+#    Updated: 2019/01/13 22:08:51 by apytlsov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 	= alcu
+NAME 	= alum1
 
 OBJ_DIR = ./obj/
 INC_DIR = ./inc/
